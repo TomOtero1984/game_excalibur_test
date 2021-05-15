@@ -2,7 +2,7 @@ var browserify = require('browserify');
 var tsify = require('tsify');
 
 browserify()
-    .add('game.ts')
+    .add('src/game.ts')
     .plugin(tsify, { project: '.' })
     .transform('browserify-shim')
     .bundle()
